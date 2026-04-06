@@ -1,0 +1,59 @@
+//Anonymous Function
+const multiply = function(x,y){
+    return x*y
+}
+console.log(multiply(4,2));
+
+//Arrow Function
+const square = x => x*x
+console.log(square(10));
+
+//Immediatily invoked function
+(function(){
+    console.log('immediatily invoked function');
+    
+})();
+
+//Call Back Function
+function add(a,b,callBack){
+    console.log(a+b);
+    console.log(callBack(a+b));
+    
+    
+}
+add(10,20,square)
+
+//Higher Order Function
+function equation(a,b,callBack){
+    console.log(2*a*b);
+
+    return function(){
+        return (callBack(a)) + (2*a*b) + (callBack(b))
+    }
+    
+}
+const result = equation(5,5,square)
+
+//Closure //it remeber and access variables
+function counter(){
+    let count = 0;
+    return function(){
+        return ++count;
+    }
+
+
+}
+const increment = counter()
+console.log(increment());
+console.log(increment());
+console.log(increment());
+console.log(increment());
+
+
+function factorial(n){
+    if (n<=1)
+        return 1
+
+    else 
+    return n * factorial(n-1)
+}
