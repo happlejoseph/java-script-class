@@ -122,3 +122,34 @@ let arr = [1, 2, 3, 3, 4, 5];
 let unique = [...new Set(arr)];
 
 console.log(unique);
+
+
+
+//13.
+let factorialNum = 5;
+let result = 1;
+
+for (let i = 1; i <= factorialNum; i++){
+    result *= i; //result = result * i;
+    console.log(result);
+}
+
+
+
+//14.
+let number1 = 9;
+let numcount = 0;
+
+for (let i = 1; i <= number1; i++){
+    if (number1 % i === 0){
+        numcount++;
+
+        
+    }
+}
+
+if (numcount === 2){
+    console.log('prime');
+    
+} else (console.log('not prime'));
+
