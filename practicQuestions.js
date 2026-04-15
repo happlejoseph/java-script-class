@@ -153,3 +153,5 @@ if (numcount === 2){
     
 } else (console.log('not prime'));
 
+
+console.log([...'hello']);
