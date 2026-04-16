@@ -8,7 +8,9 @@
 // [] is character set
 // | is either value
 // - range
-
+// \d is digits [0-9]
+// \w is word characters [a-z A-Z 0-9 _]
+// \s is space
 
 
 let regex1 = /javascript.$/;
