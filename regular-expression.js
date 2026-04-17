@@ -43,3 +43,35 @@ console.log(/[0-9a-zA-Z]at/.test('cat'));
 // 6 to 9 in starting
 
 console.log(/^[6-9]\d{9}$/.test('8111946194'));
+
+// split
+let str6 = 'hyj6pul3jlkjb';
+console.log(str6.split(/\d/));
+
+console.log('i like cat'.match(/cat/));
+
+
+
+let fullname = 'happle joseph';
+let regex3 = /(?<fname>\w+)\s(?<lname>\w+)/
+console.log(fullname.match(regex3));
+
+
+
+let date = '12-12-1885';
+console.log(date.replace(/\-/g, '_'));
+
+console.log(date.replace(/(\d{2})\-(\d{2})\-(\d{4})/, '$3/$2/$1'));
+
+let regex4 = /^(0[1-9]|[12]\d|3[01]).(0[1-9]|1[0-2]).(\d{4})$/
+console.log(regex4.test(date));
+
+
+
+//Email validation conditions
+
+//must contain @
+//must contain domain name
+//must contain . after domain
+//no space allowed
+//valid characters only
