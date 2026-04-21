@@ -7,6 +7,21 @@
 </head>
 <body>
     <h1>Synnefo</h1>
+
+    <form id="add-student">
+        <input type="search" placeholder="Search" id="search" name="search"> <br><br>
+        <select name="course" id="course" onchange="filterStudents()">
+            <option value="">All</option>
+            <option value="mern">MERN</option>
+            <option value="python">Python</option>
+            <option value="flutter">Flutter</option>
+            <option value="data science">Data Science</option>
+        </select> <br><br>
+        <input type="text" placeholder="Enter Roll No" name="rollno"> <br><br>
+        <input type="text" placeholder="Enter Age" name="age"> <br><br>
+        <input type="submit" value="Add Student">
+    </form>
+
     <a href="./pages/add.html">Add Students</a>
     <table>
         <thead>

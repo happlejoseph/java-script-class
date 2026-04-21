@@ -4,9 +4,9 @@ document.getElementById('add-student').addEventListener('submit', (e)=>{
     let name = form.name.value;
     let age = Number(form.age.value);
     let course = form.course.value;
-    let rolno = Number(form .rollno.value);
+    let rollno = Number(form.rollno.value);
     let students = JSON.parse(localStorage.getItem('students')) || [];
-    students.push({name,age,rolno,course});
+    students.push({name,age,rollno,course});
     localStorage.setItem('students',JSON.stringify(students));
     window.location.href='../index.html';
 })
