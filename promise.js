@@ -96,3 +96,11 @@ login()
         }
     }
     
+    let p2 = Promise.resolve('data 1')
+    let p3 = Promise.resolve('data 2')
+    let p4 = Promise.resolve('data 3')
+    let p5 = Promise.resolve('data 4')
+
+    Promise.all([p2,p3,p4,p5])
+    .then(console.log)
+    .catch(console.error);
